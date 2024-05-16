@@ -104,22 +104,31 @@ public class Morse {
             try {
                 res += morseToChar(symbols.get(i), mode);
             } catch (Exception e) {
-                throw new Exception(String.valueOf(i));
+                throw new Exception(String.valueOf(i + 1));
             }
         }
         return res;
     }
 
-    public static String morseToText(String text, String mode) throws Exception{
+    public static String morseToText(String text, String mode) throws Exception {
         String res = "";
         List<String> words = Arrays.asList(text.split("   "));
         for (int i = 0; i < words.size(); i++) {
             try {
                 res += morseToWord(text, mode) + " ";
             } catch (Exception e) {
-                throw new Exception(String.valueOf(i) + " " + e.getMessage());
+                throw new Exception(String.valueOf(i + 1) + " " + e.getMessage());
             }
         }
         return res;
+    }
+
+    public static int checkMorse(String code) {
+        for (int i = 0; i < code.length(); i++) {
+            if (code.charAt(i) != '.' && code.charAt(i) != '-' && code.charAt(i) != ' ') {
+                return i;
+            }
+        }
+        return -1;
     }
 }

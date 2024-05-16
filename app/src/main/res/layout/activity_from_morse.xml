@@ -1,10 +1,73 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
-    android:layout_width="match_parent"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_height="match_parent"
-    tools:context=".activities.FromMorseActivity">
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:background="@android:color/white">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <FrameLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/btn_forward"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_arrow_forward"
+            android:background="@android:color/transparent"
+            android:layout_gravity="start"/>
+
+        <TextView
+            android:id="@+id/tw_language"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textSize="24dp"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:text="Language: "/>
+
+        <ImageButton
+            android:id="@+id/btn_options"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_options"
+            android:background="@android:color/transparent"
+            android:layout_gravity="end"/>
+
+    </FrameLayout>
+
+    <EditText
+        android:id="@+id/te_from_morse"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/text_editor_background"
+        android:textSize="24dp"
+        android:textColor="#9B9B9B"
+        android:layout_margin="10dp"
+        android:layout_weight="1"/>
+
+    <TextView
+        android:id="@+id/tw_from_morse"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/text_view_background"
+        android:textSize="24dp"
+        android:textColor="#9B9B9B"
+        android:layout_margin="10dp"
+        android:layout_weight="1"/>
+
+    <ImageButton
+        android:id="@+id/btn_translate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_translate_from_morse"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="10dp"
+        android:background="?android:selectableItemBackground"/>
+
+</LinearLayout>

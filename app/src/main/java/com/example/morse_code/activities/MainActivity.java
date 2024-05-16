@@ -28,13 +28,15 @@ public class MainActivity extends AppCompatActivity {
         binding.btnFromMorse.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                Intent intent = new Intent(binding.getRoot().getContext(), FromMorseActivity.class);
+                startActivity(intent);
             }
         });
         binding.btnDoMorse.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                Intent intent = new Intent(binding.getRoot().getContext(), DoMorseActivity.class);
+                startActivity(intent);
             }
         });
     }
