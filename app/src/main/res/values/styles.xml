@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="AppTheme" parent="Theme.Material3.Light.NoActionBar">
+        <item name="textAppearanceLargePopupMenu">@style/TextAppearance.AppCompat.Body1</item>
+        <item name="textAppearanceSmallPopupMenu">@style/TextAppearance.AppCompat.Body1</item>
+        <item name="popupMenuBackground">@drawable/text_view_background</item>
+    </style>
+    
+    <style name="customDropDownMenu" parent="Widget.Material3.TextInputLayout.FilledBox.Dense.ExposedDropdownMenu">
+        <item name="boxBackgroundColor">@color/white</item>
+        <item name="shapeAppearanceOverlay">@style/RoundedShapeAppearanceOverlay</item>
+    </style>
+    
+    <style name="RoundedShapeAppearanceOverlay">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">16dp</item>
+    </style>
+
+    <style name="SplashTheme" parent="Theme.Material3.Light.NoActionBar">
+        <item name="android:windowBackground">@drawable/splash_screen</item>
+    </style>
+</resources>

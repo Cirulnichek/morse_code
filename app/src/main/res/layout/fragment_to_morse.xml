@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <EditText
+        android:id="@+id/et"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/text_view_background"
+        android:elevation="8dp"
+        android:layout_weight="1"
+        android:layout_margin="10dp"
+        android:hint="Enter text hear"
+        android:gravity="fill_horizontal"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@drawable/text_view_background"
+        android:layout_weight="1"
+        android:layout_margin="10dp"
+        android:elevation="8dp">
+
+        <TextView
+            android:id="@+id/tw"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="10dp"
+            android:elevation="8dp"
+            android:layout_weight="1"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_do"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="5dp"
+                android:backgroundTint="@color/btn_color"
+                android:text="Do this"
+                android:textSize="12dp"
+                android:padding="5dp"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_paste"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="5dp"
+                android:backgroundTint="@color/material_on_surface_stroke"
+                android:text="Paste"
+                android:textSize="12dp"
+                android:textColor="@color/black"
+                android:padding="5dp"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_translate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:backgroundTint="@color/btn_color"
+        android:elevation="8dp"
+        android:padding="10dp"
+        android:text="Translate!!!"
+        android:textSize="24dp"
+        android:layout_marginTop="20dp"/>
+
+</LinearLayout>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/menu_language"
+        style="@style/customDropDownMenu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Select Language">
+
+        <AutoCompleteTextView
+            android:id="@+id/list_lang"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="none"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <EditText
+        android:id="@+id/et_translate"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        android:layout_weight="1"
+        android:background="@drawable/text_view_background"
+        android:elevation="8dp"
+        android:textSize="16dp"
+        android:hint="Enter morse code hear"
+        android:gravity="fill_horizontal"
+        android:inputType="textMultiLine"/>
+
+    <TextView
+        android:id="@+id/tw_translate"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@drawable/text_view_background"
+        android:layout_margin="10dp"
+        android:elevation="8dp"
+        android:textSize="16dp"
+        android:inputType="textMultiLine"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_translate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:backgroundTint="@color/btn_color"
+        android:elevation="8dp"
+        android:padding="10dp"
+        android:text="Translate!!!"
+        android:textSize="24dp"
+        android:layout_marginTop="20dp"/>
+</LinearLayout>

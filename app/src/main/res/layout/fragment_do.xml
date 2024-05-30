@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/menu_language"
+        style="@style/customDropDownMenu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="8dp"
+        android:hint="Select way">
+
+        <AutoCompleteTextView
+            android:id="@+id/list_way"
+            android:textSize="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="none"
+            android:elevation="8dp"
+            style="@style/customDropDownMenu"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.slider.Slider
+        android:id="@+id/slider_dotDur"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:value="200"
+        android:valueFrom="100"
+        android:valueTo="1000"
+        android:stepSize="10"
+        app:thumbColor="@color/btn_color"
+        app:trackStopIndicatorSize="0dp"
+        app:trackColorActive="@color/btn_color" />
+
+    <EditText
+        android:id="@+id/et"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/text_view_background"
+        android:elevation="8dp"
+        android:layout_weight="1"
+        android:layout_margin="10dp"
+        android:hint="Enter morse code hear"
+        android:gravity="fill_horizontal"
+        android:inputType="textMultiLine"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_do"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:backgroundTint="@color/btn_color"
+        android:elevation="8dp"
+        android:padding="10dp"
+        android:text="Do!"
+        android:textSize="24dp"
+        android:layout_marginTop="20dp"/>
+</LinearLayout>
